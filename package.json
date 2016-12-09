@@ -1,0 +1,24 @@
+{
+  "name": "web-optimization",
+  "version": "1.0.0",
+  "description": "FEND project for web optimization course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "camilebron"
+  },
+  "keywords": [
+    "optimization"
+  ],
+  "author": "Camille Lebron Brayfield",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-critical": "^0.2.1"
+  },
+  "dependencies": {}
+}
