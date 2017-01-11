@@ -1,10 +1,4 @@
 /*
-Welcome to the 60fps project! Your goal is to make Cam's Pizzeria website run
-jank-free at 60 frames per second.
-
-There are two major issues in this code that lead to sub-60fps performance. Can
-you spot and fix both?
-
 
 Built into the code, you'll find a few instances of the User Timing API
 (window.performance), which will be console.log()ing frame rate data into the
@@ -448,10 +442,13 @@ var resizePizzas = function(size) {
   }
 
   // Iterates through pizza elements on the page and changes their widths
+
+  var randomPizzas = document.querySelectorAll(".randomPizzaContainer");
+
   function changePizzaSizes(size) {
-    for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
-      var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
-      var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
+    for (var i = 0; i < randomPizzas.length; i++) {
+      //var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
+      //var newwidth = (document.querySelectorAll(".randomPizzaContainer")[i].offsetWidth + dx) + 'px';
       document.querySelectorAll(".randomPizzaContainer")[i].style.width = newwidth;
     }
   }
@@ -524,7 +521,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  for (var i = 0; i < 16; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
