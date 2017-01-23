@@ -19,6 +19,9 @@
 #### Running Grunt
 
     1. After cloning the repository open the terminal in the OptimizationProject directory.
-    2. write in the terminal **'grunt'**
+    2. Change to the projects root directory
+    3. Install Grunt locally using npm install grunt --save-dev
+    4. Install project dependencias with npm install
+    5. run Grunt using **grunt**
     
 
